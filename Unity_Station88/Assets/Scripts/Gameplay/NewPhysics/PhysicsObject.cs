@@ -43,6 +43,11 @@ public class PhysicsObject : MonoBehaviour {
 
     }
 
+    protected virtual void CheckShoots()
+    {
+
+    }
+
     private void FixedUpdate()
     {
         velocity += gravityModifier * Physics2D.gravity * Time.deltaTime;
@@ -60,6 +65,8 @@ public class PhysicsObject : MonoBehaviour {
         move = Vector2.up * deltaPosition.y;
 
         Movement(move, true);
+
+        CheckShoots();
     }
 
     void Movement (Vector2 move, bool yMovement)

@@ -231,12 +231,14 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\autoMoveTestingObject.cs" />
     <Compile Include="Assets\Scripts\Gameplay\Controller2D.cs" />
+    <Compile Include="Assets\Scripts\Gameplay\DeadzoneCamera.cs" />
     <Compile Include="Assets\Scripts\Gameplay\NewPhysics\PhysicsObject.cs" />
     <Compile Include="Assets\Scripts\Gameplay\NewPhysics\PlayerPlatformerController.cs" />
+    <Compile Include="Assets\Scripts\Gameplay\PerfectPixel.cs" />
     <Compile Include="Assets\Scripts\Gameplay\PlatformController.cs" />
     <Compile Include="Assets\Scripts\Gameplay\Player.cs" />
+    <Compile Include="Assets\Scripts\Gameplay\ProjectileMovement.cs" />
     <Compile Include="Assets\Scripts\Gameplay\RaycastController.cs" />
     <Compile Include="Assets\Scripts\Menus&amp;Ui\LoadOnClick.cs" />
     <Compile Include="Assets\Scripts\Menus&amp;Ui\OnEnterQuit.cs" />

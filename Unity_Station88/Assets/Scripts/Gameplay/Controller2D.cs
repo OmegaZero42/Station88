@@ -29,7 +29,7 @@ public class Controller2D : RaycastController {
         if (velocity.y != 0)
             VerticalCollisions(ref velocity);
 
-        transform.Translate(velocity);
+        //transform.Translate(velocity);
     }
 
     void VerticalCollisions(ref Vector3 velocity)
