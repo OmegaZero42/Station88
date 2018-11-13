@@ -5,7 +5,7 @@ using UnityEngine;
 public class ProjectileMovement : MonoBehaviour {
 
     [SerializeField]
-    public float damage;
+    public int damage;
     public float speed;
 
     public bool flipProj;
@@ -38,7 +38,6 @@ public class ProjectileMovement : MonoBehaviour {
     void Update () {
          rb2d.velocity = move * speed;
         timeToDisappear -= Time.deltaTime;
-        Debug.Log(timeToDisappear);
         if (timeToDisappear <= 0)
         {
             GameObject.Destroy(projToDestroy);

@@ -55,6 +55,39 @@ TextureImporter:
     21300096: SpriteSheetEnvStation88_01_48
     21300098: SpriteSheetEnvStation88_01_49
     21300100: SpriteSheetEnvStation88_01_50
+    21300102: SpriteSheetEnvStation88_01_51
+    21300104: SpriteSheetEnvStation88_01_52
+    21300106: SpriteSheetEnvStation88_01_53
+    21300108: SpriteSheetEnvStation88_01_54
+    21300110: SpriteSheetEnvStation88_01_55
+    21300112: SpriteSheetEnvStation88_01_56
+    21300114: SpriteSheetEnvStation88_01_57
+    21300116: SpriteSheetEnvStation88_01_58
+    21300118: SpriteSheetEnvStation88_01_59
+    21300120: SpriteSheetEnvStation88_01_60
+    21300122: SpriteSheetEnvStation88_01_61
+    21300124: SpriteSheetEnvStation88_01_62
+    21300126: SpriteSheetEnvStation88_01_63
+    21300128: SpriteSheetEnvStation88_01_64
+    21300130: SpriteSheetEnvStation88_01_65
+    21300132: SpriteSheetEnvStation88_01_66
+    21300134: SpriteSheetEnvStation88_01_67
+    21300136: SpriteSheetEnvStation88_01_68
+    21300138: SpriteSheetEnvStation88_01_69
+    21300140: SpriteSheetEnvStation88_01_70
+    21300142: SpriteSheetEnvStation88_01_71
+    21300144: SpriteSheetEnvStation88_01_72
+    21300146: SpriteSheetEnvStation88_01_73
+    21300148: SpriteSheetEnvStation88_01_74
+    21300150: SpriteSheetEnvStation88_01_75
+    21300152: SpriteSheetEnvStation88_01_76
+    21300154: SpriteSheetEnvStation88_01_77
+    21300156: SpriteSheetEnvStation88_01_78
+    21300158: SpriteSheetEnvStation88_01_79
+    21300160: SpriteSheetEnvStation88_01_80
+    21300162: SpriteSheetEnvStation88_01_81
+    21300164: SpriteSheetEnvStation88_01_82
+    21300166: SpriteSheetEnvStation88_01_83
   externalObjects: {}
   serializedVersion: 4
   mipmaps:
@@ -247,8 +280,8 @@ TextureImporter:
       name: SpriteSheetEnvStation88_01_8
       rect:
         serializedVersion: 2
-        x: 0
-        y: 576
+        x: 256
+        y: 608
         width: 32
         height: 32
       alignment: 0
@@ -261,8 +294,8 @@ TextureImporter:
       name: SpriteSheetEnvStation88_01_9
       rect:
         serializedVersion: 2
-        x: 32
-        y: 576
+        x: 288
+        y: 608
         width: 32
         height: 32
       alignment: 0
@@ -275,8 +308,8 @@ TextureImporter:
       name: SpriteSheetEnvStation88_01_10
       rect:
         serializedVersion: 2
-        x: 64
-        y: 576
+        x: 320
+        y: 608
         width: 32
         height: 32
       alignment: 0
@@ -289,8 +322,8 @@ TextureImporter:
       name: SpriteSheetEnvStation88_01_11
       rect:
         serializedVersion: 2
-        x: 96
-        y: 576
+        x: 352
+        y: 608
         width: 32
         height: 32
       alignment: 0
@@ -303,8 +336,8 @@ TextureImporter:
       name: SpriteSheetEnvStation88_01_12
       rect:
         serializedVersion: 2
-        x: 128
-        y: 576
+        x: 416
+        y: 608
         width: 32
         height: 32
       alignment: 0
@@ -317,8 +350,8 @@ TextureImporter:
       name: SpriteSheetEnvStation88_01_13
       rect:
         serializedVersion: 2
-        x: 160
-        y: 576
+        x: 448
+        y: 608
         width: 32
         height: 32
       alignment: 0
@@ -331,8 +364,8 @@ TextureImporter:
       name: SpriteSheetEnvStation88_01_14
       rect:
         serializedVersion: 2
-        x: 192
-        y: 576
+        x: 512
+        y: 608
         width: 32
         height: 32
       alignment: 0
@@ -345,8 +378,8 @@ TextureImporter:
       name: SpriteSheetEnvStation88_01_15
       rect:
         serializedVersion: 2
-        x: 224
-        y: 576
+        x: 544
+        y: 608
         width: 32
         height: 32
       alignment: 0
@@ -359,8 +392,8 @@ TextureImporter:
       name: SpriteSheetEnvStation88_01_16
       rect:
         serializedVersion: 2
-        x: 32
-        y: 544
+        x: 576
+        y: 608
         width: 32
         height: 32
       alignment: 0
@@ -373,8 +406,8 @@ TextureImporter:
       name: SpriteSheetEnvStation88_01_17
       rect:
         serializedVersion: 2
-        x: 64
-        y: 544
+        x: 608
+        y: 608
         width: 32
         height: 32
       alignment: 0
@@ -387,8 +420,8 @@ TextureImporter:
       name: SpriteSheetEnvStation88_01_18
       rect:
         serializedVersion: 2
-        x: 96
-        y: 544
+        x: 0
+        y: 576
         width: 32
         height: 32
       alignment: 0
@@ -401,8 +434,8 @@ TextureImporter:
       name: SpriteSheetEnvStation88_01_19
       rect:
         serializedVersion: 2
-        x: 128
-        y: 544
+        x: 32
+        y: 576
         width: 32
         height: 32
       alignment: 0
@@ -415,8 +448,8 @@ TextureImporter:
       name: SpriteSheetEnvStation88_01_20
       rect:
         serializedVersion: 2
-        x: 160
-        y: 544
+        x: 64
+        y: 576
         width: 32
         height: 32
       alignment: 0
@@ -429,8 +462,8 @@ TextureImporter:
       name: SpriteSheetEnvStation88_01_21
       rect:
         serializedVersion: 2
-        x: 192
-        y: 544
+        x: 96
+        y: 576
         width: 32
         height: 32
       alignment: 0
@@ -443,8 +476,8 @@ TextureImporter:
       name: SpriteSheetEnvStation88_01_22
       rect:
         serializedVersion: 2
-        x: 224
-        y: 544
+        x: 128
+        y: 576
         width: 32
         height: 32
       alignment: 0
@@ -457,8 +490,8 @@ TextureImporter:
       name: SpriteSheetEnvStation88_01_23
       rect:
         serializedVersion: 2
-        x: 416
-        y: 544
+        x: 160
+        y: 576
         width: 32
         height: 32
       alignment: 0
@@ -471,8 +504,8 @@ TextureImporter:
       name: SpriteSheetEnvStation88_01_24
       rect:
         serializedVersion: 2
-        x: 0
-        y: 512
+        x: 192
+        y: 576
         width: 32
         height: 32
       alignment: 0
@@ -485,8 +518,8 @@ TextureImporter:
       name: SpriteSheetEnvStation88_01_25
       rect:
         serializedVersion: 2
-        x: 32
-        y: 512
+        x: 224
+        y: 576
         width: 32
         height: 32
       alignment: 0
@@ -499,8 +532,8 @@ TextureImporter:
       name: SpriteSheetEnvStation88_01_26
       rect:
         serializedVersion: 2
-        x: 64
-        y: 512
+        x: 256
+        y: 576
         width: 32
         height: 32
       alignment: 0
@@ -513,8 +546,8 @@ TextureImporter:
       name: SpriteSheetEnvStation88_01_27
       rect:
         serializedVersion: 2
-        x: 96
-        y: 512
+        x: 288
+        y: 576
         width: 32
         height: 32
       alignment: 0
@@ -527,8 +560,8 @@ TextureImporter:
       name: SpriteSheetEnvStation88_01_28
       rect:
         serializedVersion: 2
-        x: 128
-        y: 512
+        x: 320
+        y: 576
         width: 32
         height: 32
       alignment: 0
@@ -541,8 +574,8 @@ TextureImporter:
       name: SpriteSheetEnvStation88_01_29
       rect:
         serializedVersion: 2
-        x: 160
-        y: 512
+        x: 352
+        y: 576
         width: 32
         height: 32
       alignment: 0
@@ -555,8 +588,8 @@ TextureImporter:
       name: SpriteSheetEnvStation88_01_30
       rect:
         serializedVersion: 2
-        x: 192
-        y: 512
+        x: 384
+        y: 576
         width: 32
         height: 32
       alignment: 0
@@ -569,8 +602,8 @@ TextureImporter:
       name: SpriteSheetEnvStation88_01_31
       rect:
         serializedVersion: 2
-        x: 224
-        y: 512
+        x: 416
+        y: 576
         width: 32
         height: 32
       alignment: 0
@@ -583,8 +616,8 @@ TextureImporter:
       name: SpriteSheetEnvStation88_01_32
       rect:
         serializedVersion: 2
-        x: 0
-        y: 480
+        x: 448
+        y: 576
         width: 32
         height: 32
       alignment: 0
@@ -597,8 +630,8 @@ TextureImporter:
       name: SpriteSheetEnvStation88_01_33
       rect:
         serializedVersion: 2
-        x: 32
-        y: 480
+        x: 480
+        y: 576
         width: 32
         height: 32
       alignment: 0
@@ -611,8 +644,8 @@ TextureImporter:
       name: SpriteSheetEnvStation88_01_34
       rect:
         serializedVersion: 2
-        x: 64
-        y: 480
+        x: 544
+        y: 576
         width: 32
         height: 32
       alignment: 0
@@ -625,8 +658,8 @@ TextureImporter:
       name: SpriteSheetEnvStation88_01_35
       rect:
         serializedVersion: 2
-        x: 96
-        y: 480
+        x: 576
+        y: 576
         width: 32
         height: 32
       alignment: 0
@@ -639,8 +672,8 @@ TextureImporter:
       name: SpriteSheetEnvStation88_01_36
       rect:
         serializedVersion: 2
-        x: 128
-        y: 480
+        x: 32
+        y: 544
         width: 32
         height: 32
       alignment: 0
@@ -653,8 +686,8 @@ TextureImporter:
       name: SpriteSheetEnvStation88_01_37
       rect:
         serializedVersion: 2
-        x: 160
-        y: 480
+        x: 64
+        y: 544
         width: 32
         height: 32
       alignment: 0
@@ -667,8 +700,8 @@ TextureImporter:
       name: SpriteSheetEnvStation88_01_38
       rect:
         serializedVersion: 2
-        x: 192
-        y: 480
+        x: 96
+        y: 544
         width: 32
         height: 32
       alignment: 0
@@ -681,8 +714,8 @@ TextureImporter:
       name: SpriteSheetEnvStation88_01_39
       rect:
         serializedVersion: 2
-        x: 224
-        y: 480
+        x: 128
+        y: 544
         width: 32
         height: 32
       alignment: 0
@@ -696,7 +729,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 160
-        y: 448
+        y: 544
         width: 32
         height: 32
       alignment: 0
@@ -710,7 +743,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 192
-        y: 448
+        y: 544
         width: 32
         height: 32
       alignment: 0
@@ -724,7 +757,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 224
-        y: 448
+        y: 544
         width: 32
         height: 32
       alignment: 0
@@ -735,6 +768,384 @@ TextureImporter:
       tessellationDetail: 0
     - serializedVersion: 2
       name: SpriteSheetEnvStation88_01_43
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 544
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: SpriteSheetEnvStation88_01_44
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 544
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: SpriteSheetEnvStation88_01_45
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 544
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: SpriteSheetEnvStation88_01_46
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 544
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: SpriteSheetEnvStation88_01_47
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 512
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: SpriteSheetEnvStation88_01_48
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 512
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: SpriteSheetEnvStation88_01_49
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 512
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: SpriteSheetEnvStation88_01_50
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 512
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: SpriteSheetEnvStation88_01_51
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 512
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: SpriteSheetEnvStation88_01_52
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 512
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: SpriteSheetEnvStation88_01_53
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 512
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: SpriteSheetEnvStation88_01_54
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 512
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: SpriteSheetEnvStation88_01_55
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 512
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: SpriteSheetEnvStation88_01_56
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 512
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: SpriteSheetEnvStation88_01_57
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 512
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: SpriteSheetEnvStation88_01_58
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 512
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: SpriteSheetEnvStation88_01_59
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 480
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: SpriteSheetEnvStation88_01_60
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 480
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: SpriteSheetEnvStation88_01_61
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 480
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: SpriteSheetEnvStation88_01_62
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 480
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: SpriteSheetEnvStation88_01_63
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 480
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: SpriteSheetEnvStation88_01_64
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 480
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: SpriteSheetEnvStation88_01_65
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 480
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: SpriteSheetEnvStation88_01_66
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 480
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: SpriteSheetEnvStation88_01_67
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 448
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: SpriteSheetEnvStation88_01_68
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 448
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: SpriteSheetEnvStation88_01_69
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 448
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: SpriteSheetEnvStation88_01_70
       rect:
         serializedVersion: 2
         x: 0
@@ -748,7 +1159,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: SpriteSheetEnvStation88_01_44
+      name: SpriteSheetEnvStation88_01_71
       rect:
         serializedVersion: 2
         x: 32
@@ -762,7 +1173,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: SpriteSheetEnvStation88_01_45
+      name: SpriteSheetEnvStation88_01_72
       rect:
         serializedVersion: 2
         x: 64
@@ -776,7 +1187,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: SpriteSheetEnvStation88_01_46
+      name: SpriteSheetEnvStation88_01_73
       rect:
         serializedVersion: 2
         x: 96
@@ -790,7 +1201,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: SpriteSheetEnvStation88_01_47
+      name: SpriteSheetEnvStation88_01_74
       rect:
         serializedVersion: 2
         x: 128
@@ -804,7 +1215,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: SpriteSheetEnvStation88_01_48
+      name: SpriteSheetEnvStation88_01_75
       rect:
         serializedVersion: 2
         x: 160
@@ -818,7 +1229,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: SpriteSheetEnvStation88_01_49
+      name: SpriteSheetEnvStation88_01_76
       rect:
         serializedVersion: 2
         x: 192
@@ -832,11 +1243,95 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: SpriteSheetEnvStation88_01_50
+      name: SpriteSheetEnvStation88_01_77
       rect:
         serializedVersion: 2
         x: 224
         y: 416
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: SpriteSheetEnvStation88_01_78
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 384
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: SpriteSheetEnvStation88_01_79
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 384
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: SpriteSheetEnvStation88_01_80
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 384
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: SpriteSheetEnvStation88_01_81
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 352
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: SpriteSheetEnvStation88_01_82
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 352
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: SpriteSheetEnvStation88_01_83
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 352
         width: 32
         height: 32
       alignment: 0
