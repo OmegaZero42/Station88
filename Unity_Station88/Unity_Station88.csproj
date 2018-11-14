@@ -304,6 +304,7 @@
     <Compile Include="Assets\Scripts\Gameplay\Player.cs" />
     <Compile Include="Assets\Scripts\Gameplay\ProjectileMovement.cs" />
     <Compile Include="Assets\Scripts\Gameplay\RaycastController.cs" />
+    <Compile Include="Assets\Scripts\Gameplay\Walker_Enemy.cs" />
     <Compile Include="Assets\Scripts\Menus&amp;Ui\LoadOnClick.cs" />
     <Compile Include="Assets\Scripts\Menus&amp;Ui\OnEnterQuit.cs" />
   </ItemGroup>
