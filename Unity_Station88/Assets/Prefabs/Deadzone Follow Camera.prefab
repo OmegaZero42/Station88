@@ -39,7 +39,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1321427843468262}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -4.62, y: 0.96, z: -20}
+  m_LocalPosition: {x: -4.7141294, y: -1.3399998, z: -25}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -109,17 +109,32 @@ MonoBehaviour:
   target: {fileID: 0}
   deadzone:
     serializedVersion: 2
-    x: 0
-    y: 0
-    width: 0
-    height: 0
-  smoothPos: {x: 0, y: 0, z: 0}
+    x: -0.5
+    y: -2.18
+    width: 1
+    height: 4.13
+  smoothPos: {x: -4.7141294, y: -1.34, z: -20}
   limits:
   - serializedVersion: 2
-    x: -37.8
-    y: -9.33
-    width: 73.8
-    height: 22.04
+    x: -22.5
+    y: 3.23
+    width: 24.29
+    height: 3.77
+  - serializedVersion: 2
+    x: -16.1
+    y: -8.8
+    width: 32.1
+    height: 6.2
+  - serializedVersion: 2
+    x: 15.14
+    y: -4.5
+    width: 32.1
+    height: 6.2
+  - serializedVersion: 2
+    x: 1.1
+    y: 6.56
+    width: 27.91
+    height: 6.2
 --- !u!114 &114538131317111912
 MonoBehaviour:
   m_ObjectHideFlags: 1

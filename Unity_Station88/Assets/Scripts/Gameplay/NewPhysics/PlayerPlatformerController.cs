@@ -102,4 +102,12 @@ public class PlayerPlatformerController : PhysicsObject {
             canShot = false;
 
     }
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.collider.tag == "ProjectilePlayer")
+        {
+            Physics2D.IgnoreCollision(collision.collider.GetComponent<Collider2D>(), GetComponent<Collider2D>());
+        }
+    }
 }

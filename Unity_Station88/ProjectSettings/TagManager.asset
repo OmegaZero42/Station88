@@ -7,6 +7,7 @@ TagManager:
   - ProjectilePlayer
   - Obstacle
   - Crate
+  - Enemy
   layers:
   - Default
   - TransparentFX

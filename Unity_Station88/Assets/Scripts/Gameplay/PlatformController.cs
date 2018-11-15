@@ -25,7 +25,6 @@ public class PlatformController : RaycastController {
         float directionX = Mathf.Sign(velocity.x);
         float directionY = Mathf.Sign(velocity.y);
 
-        //vertical movement
         if (velocity.y != 0)
         {
             float rayLenght = Mathf.Abs(velocity.y) + skinWidth;
@@ -52,5 +51,10 @@ public class PlatformController : RaycastController {
             }
         }
 
+    }
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        
     }
 }

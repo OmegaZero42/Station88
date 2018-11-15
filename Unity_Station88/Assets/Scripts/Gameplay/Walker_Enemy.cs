@@ -45,8 +45,9 @@ public class Walker_Enemy : MonoBehaviour {
         {
             GameObject instProj = Instantiate(projectile, projSpawn.position, new Quaternion());
             ProjectileMovement projMov = instProj.GetComponent<ProjectileMovement>();
+            Physics2D.IgnoreCollision(instProj.GetComponent<Collider2D>(), GetComponent<Collider2D>());
             projMov.flipProj = spriteRenderer.flipX;
-            instProj.layer = 2;
+            instProj.layer = 25;
             canShoot = false;
             currentTimeToShoot = timeToShoot;
         }
