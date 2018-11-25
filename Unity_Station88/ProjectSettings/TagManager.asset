@@ -8,6 +8,8 @@ TagManager:
   - Obstacle
   - Crate
   - Enemy
+  - Projectile
+  - Ground
   layers:
   - Default
   - TransparentFX
@@ -19,7 +21,7 @@ TagManager:
   - 
   - Player
   - Obstacle
-  - 
+  - Enemy
   - 
   - 
   - 

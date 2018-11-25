@@ -99,7 +99,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e04f12d7a716e984eb32f2e59e8a5a68, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damage: 1
+  damage: 25
   speed: 10
   flipProj: 0
   projToDestroy: {fileID: 1143612170204152}

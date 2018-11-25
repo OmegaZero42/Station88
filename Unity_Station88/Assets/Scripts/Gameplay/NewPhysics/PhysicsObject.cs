@@ -11,6 +11,12 @@ public class PhysicsObject : MonoBehaviour {
     protected List<RaycastHit2D> hitBufferList = new List<RaycastHit2D>(16);
     protected Vector2 targetVelocity;
 
+    protected float meleeAttackPower;
+    protected float distanceAttackPower;
+    protected float speedPower;
+    protected float defensePower;
+    protected float hp;
+
     protected bool grounded;
     protected Vector2 groundNormal;
 
