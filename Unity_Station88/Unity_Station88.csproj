@@ -297,6 +297,7 @@
     <Compile Include="Assets\Scripts\Gameplay\DeadzoneCamera.cs" />
     <Compile Include="Assets\Scripts\Gameplay\DestroyableItem.cs" />
     <Compile Include="Assets\Scripts\Gameplay\DestroyProj.cs" />
+    <Compile Include="Assets\Scripts\Gameplay\HealthAndDamageSystem.cs" />
     <Compile Include="Assets\Scripts\Gameplay\NewPhysics\PhysicsObject.cs" />
     <Compile Include="Assets\Scripts\Gameplay\NewPhysics\PlayerPlatformerController.cs" />
     <Compile Include="Assets\Scripts\Gameplay\PerfectPixel.cs" />

@@ -43,4 +43,14 @@ public class ProjectileMovement : MonoBehaviour {
             GameObject.Destroy(projToDestroy);
         }
 	}
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        Destroy(this.GetComponent<GameObject>());
+    }
+
+    private void OnCollisionStay2D(Collision2D collision)
+    {
+        Destroy(this.GetComponent<GameObject>());
+    }
 }

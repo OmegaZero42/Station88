@@ -29,7 +29,6 @@ public class PhysicsObject : MonoBehaviour {
     {
         contactFilter.useTriggers = false;
         contactFilter.SetLayerMask(Physics2D.GetLayerCollisionMask(gameObject.layer));
-        contactFilter.useLayerMask = true;
 	}
 	
 	void Update ()
@@ -48,7 +47,7 @@ public class PhysicsObject : MonoBehaviour {
 
     }
 
-    private void FixedUpdate()
+    public virtual void FixedUpdate()
     {
         velocity += gravityModifier * Physics2D.gravity * Time.deltaTime;
         velocity.x = targetVelocity.x;

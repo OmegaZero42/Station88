@@ -6,12 +6,13 @@ public class PlayerPlatformerController : PhysicsObject {
 
     public float jumpTakeOffSpeed = 7;
     public float maxSpeed = 7;
-
     
     private SpriteRenderer spriteRenderer;
     private Transform trsf;
     bool flipOld = true;
 
+    [SerializeField]
+    protected LayerMask layerMask;
     [SerializeField]
     protected GameObject defaultProjectile;
     [SerializeField]
@@ -27,6 +28,9 @@ public class PlayerPlatformerController : PhysicsObject {
     protected float timeToSpawnProj = 0.5f;
     protected float oldTimeToSpawnProj = 0.5f;
 
+    public bool IsTakingDamage;
+    public float takingDamageTime;
+
     private void Start()
     {
         spriteRenderer = GetComponent<SpriteRenderer>();
@@ -36,58 +40,86 @@ public class PlayerPlatformerController : PhysicsObject {
             projSpawn = GameObject.Find("GunPoint").GetComponent<Transform>();
         }
         canShot = true;
+
+        contactFilter.useTriggers = false;
+        contactFilter.SetLayerMask(Physics2D.GetLayerCollisionMask(layerMask));
+        contactFilter.useLayerMask = true;
+        IsTakingDamage = false;
+        takingDamageTime = 5f;
+    }
+
+    public override void FixedUpdate()
+    {
+        base.FixedUpdate();
+        if (IsTakingDamage && takingDamageTime > 0)
+            takingDamageTime--;
+        else if (IsTakingDamage && takingDamageTime <= 0)
+        {
+            IsTakingDamage = false;
+            takingDamageTime = 5f;
+        }
+        Debug.Log("oui : " + takingDamageTime);
     }
 
     protected override void ComputeVelocity()
     {
-
         Vector2 move = Vector2.zero;
 
         move.x = Input.GetAxis("Horizontal");
 
-        if (Input.GetButtonDown("Jump") && grounded)
+        if (!IsTakingDamage)
         {
-            velocity.y = jumpTakeOffSpeed;
-        }
-        else if (Input.GetButtonUp("Jump"))
-        {
-            if (velocity.y > 0)
+            if (Input.GetButtonDown("Jump") && grounded)
             {
-                velocity.y = velocity.y * .5f;
+                velocity.y = jumpTakeOffSpeed;
             }
-        }
-  
-        if (move.x > 0)
-        {
-            spriteRenderer.flipX = false;
-        }
-        else if (move.x < 0)
-        {
-            spriteRenderer.flipX = true;
-        }
-        flipOld = spriteRenderer.flipX;
-        if (move.x == 0)
-        {
-            spriteRenderer.flipX = flipOld;
-        }
+            else if (Input.GetButtonUp("Jump"))
+            {
+                if (velocity.y > 0)
+                {
+                    velocity.y = velocity.y * .5f;
+                }
+            }
 
-        if (Input.GetButtonDown("Fire1") && defaultProjectile)
-        {
-            GameObject instProj;
-            if (spriteRenderer.flipX == false && canShot)
+            if (move.x > 0)
             {
-                instProj = Instantiate(defaultProjectile, projSpawn.position, new Quaternion());
-                ProjectileMovement projMov = instProj.GetComponent<ProjectileMovement>();
-                projMov.flipProj = spriteRenderer.flipX;
+                spriteRenderer.flipX = false;
             }
-            else if (spriteRenderer.flipX == true && canShot)
+            else if (move.x < 0)
             {
-                instProj = Instantiate(defaultProjectile, projSpawnBis.position, new Quaternion());
-                ProjectileMovement projMov = instProj.GetComponent<ProjectileMovement>();
-                projMov.flipProj = spriteRenderer.flipX;
+                spriteRenderer.flipX = true;
+            }
+            flipOld = spriteRenderer.flipX;
+            if (move.x == 0)
+            {
+                spriteRenderer.flipX = flipOld;
+            }
+
+            if (Input.GetButtonDown("Fire1") && defaultProjectile)
+            {
+                GameObject instProj;
+                if (spriteRenderer.flipX == false && canShot)
+                {
+                    instProj = Instantiate(defaultProjectile, projSpawn.position, new Quaternion());
+                    ProjectileMovement projMov = instProj.GetComponent<ProjectileMovement>();
+                    projMov.flipProj = spriteRenderer.flipX;
+                }
+                else if (spriteRenderer.flipX == true && canShot)
+                {
+                    instProj = Instantiate(defaultProjectile, projSpawnBis.position, new Quaternion());
+                    ProjectileMovement projMov = instProj.GetComponent<ProjectileMovement>();
+                    projMov.flipProj = spriteRenderer.flipX;
+                }
             }
         }
-
+        else if (IsTakingDamage)
+        {
+            float datWay = -1f;
+            if (flipOld)
+                datWay = 1f;
+            move = new Vector2(datWay, 0)*0.7f;
+            velocity = new Vector2(0, 1) * maxSpeed*0.7f;
+        }
         targetVelocity = move * maxSpeed;
     }
 

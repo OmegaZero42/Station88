@@ -26,7 +26,6 @@ public class DestroyableItem : MonoBehaviour {
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        Debug.Log("collision");
         if (collision.collider.CompareTag("ProjectilePlayer"))
         {
             currentPV -= collision.collider.GetComponent<ProjectileMovement>().damage;
