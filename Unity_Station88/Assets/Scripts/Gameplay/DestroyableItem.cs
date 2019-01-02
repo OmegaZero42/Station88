@@ -12,27 +12,39 @@ public class DestroyableItem : MonoBehaviour {
 
     int currentPV;
 
-	// Use this for initialization
 	void Start () {
-        if (basePV == null)
-            basePV = 1;
         currentPV = basePV;
         spriteRenderer = GetComponent<SpriteRenderer>();
 	}
 	
-	// Update is called once per frame
 	void Update () {
+    }
+
+    private void FixedUpdate()
+    {
+        Debug.Log(currentPV);
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
         if (collision.collider.CompareTag("ProjectilePlayer"))
         {
+            Debug.Log("colliding with " + collision.collider.name);
             currentPV -= collision.collider.GetComponent<ProjectileMovement>().damage;
             ManageColor();
             if (currentPV <= 0)
                 Destroy(self);
             Destroy(collision.collider.gameObject);
+        }
+        if (collision.collider.CompareTag("MeleeAttack"))
+        {
+            Debug.Log("colliding with " + collision.collider.name);
+            currentPV -= collision.collider.GetComponent<MeleeAttack>().damage;
+            ManageColor();
+            collision.collider.gameObject.SetActive(false);
+            if (currentPV <= 0)
+                Destroy(self);
+            
         }
     }
 

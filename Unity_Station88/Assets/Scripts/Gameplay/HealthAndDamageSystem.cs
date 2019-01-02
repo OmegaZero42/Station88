@@ -23,7 +23,6 @@ public class HealthAndDamageSystem : MonoBehaviour
 
     void Update()
     {
-        Debug.Log("current hp =" + currentHp);
         if (currentHp <= 0)
         {
             if (this.tag == "Player")

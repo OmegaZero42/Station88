@@ -9,6 +9,7 @@ TagManager:
   - Crate
   - Enemy
   - Projectile
+  - MeleeAttack
   layers:
   - Default
   - TransparentFX
@@ -20,7 +21,7 @@ TagManager:
   - 
   - Player
   - Obstacle
-  - 
+  - MeleeAttack
   - 
   - 
   - 

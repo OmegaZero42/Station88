@@ -22,6 +22,12 @@ public class PlayerPlatformerController : PhysicsObject {
     [SerializeField]
     protected Transform projSpawnBis;
 
+    [SerializeField]
+    protected GameObject HitboxMelee;
+    [SerializeField]
+    protected GameObject HitboxMelee2;
+
+
     private GameObject[] getCount;
     private bool canShot;
 
@@ -58,7 +64,6 @@ public class PlayerPlatformerController : PhysicsObject {
             IsTakingDamage = false;
             takingDamageTime = 5f;
         }
-        Debug.Log("oui : " + takingDamageTime);
     }
 
     protected override void ComputeVelocity()
@@ -109,6 +114,18 @@ public class PlayerPlatformerController : PhysicsObject {
                     instProj = Instantiate(defaultProjectile, projSpawnBis.position, new Quaternion());
                     ProjectileMovement projMov = instProj.GetComponent<ProjectileMovement>();
                     projMov.flipProj = spriteRenderer.flipX;
+                }
+            }
+
+            if (Input.GetButtonDown("Fire2"))
+            {
+                if (spriteRenderer.flipX == false)
+                {
+                    HitboxMelee.SetActive(true);
+                }
+                else if (spriteRenderer.flipX == true)
+                {
+                    HitboxMelee2.SetActive(true);
                 }
             }
         }
