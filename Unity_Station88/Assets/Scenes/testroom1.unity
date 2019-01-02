@@ -368,6 +368,7 @@ MonoBehaviour:
   minGroundNormalY: 0.65
   gravityModifier: 1
   jumpTakeOffSpeed: 7
+  dashSpeed: 10
   maxSpeed: 7
   layerMask:
     serializedVersion: 2

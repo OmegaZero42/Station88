@@ -5,6 +5,7 @@ using UnityEngine;
 public class PlayerPlatformerController : PhysicsObject {
 
     public float jumpTakeOffSpeed = 7;
+    public float dashSpeed = 5;
     public float maxSpeed = 7;
     
     private SpriteRenderer spriteRenderer;
@@ -85,7 +86,10 @@ public class PlayerPlatformerController : PhysicsObject {
                     velocity.y = velocity.y * .5f;
                 }
             }
-
+            if (Input.GetButtonDown("Dash") && grounded)
+            {
+                move.x = move.x * dashSpeed;
+            }
             if (move.x > 0)
             {
                 spriteRenderer.flipX = false;
