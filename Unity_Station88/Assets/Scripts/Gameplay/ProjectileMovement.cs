@@ -36,7 +36,7 @@ public class ProjectileMovement : MonoBehaviour {
     }
 
     void Update () {
-         rb2d.velocity = move * speed;
+        rb2d.velocity = move * speed;
         timeToDisappear -= Time.deltaTime;
         if (timeToDisappear <= 0)
         {

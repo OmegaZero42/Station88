@@ -8,6 +8,9 @@ public class MeleeAttack : MonoBehaviour {
     [SerializeField]
     public int damage;
 
+    [SerializeField]
+    GameObject Player;
+
     protected float timeToDisappear = 1;
     [SerializeField]
     protected GameObject AttackToDestroy;
