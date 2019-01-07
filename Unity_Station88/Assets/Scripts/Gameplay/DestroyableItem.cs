@@ -22,7 +22,7 @@ public class DestroyableItem : MonoBehaviour {
 
     private void FixedUpdate()
     {
-        Debug.Log(currentPV);
+
     }
 
     private void OnCollisionEnter2D(Collision2D collision)

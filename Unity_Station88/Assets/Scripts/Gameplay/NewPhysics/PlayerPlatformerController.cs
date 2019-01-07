@@ -53,6 +53,8 @@ public class PlayerPlatformerController : PhysicsObject {
         contactFilter.useLayerMask = true;
         IsTakingDamage = false;
         takingDamageTime = 5f;
+        Outline ot = GetComponent<Outline>();
+        ot.ShowHide_Outline(true);
     }
 
     public override void FixedUpdate()

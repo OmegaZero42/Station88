@@ -61,7 +61,7 @@ public class Walker_Enemy : MonoBehaviour {
     {
         if (collision.collider.tag == "Crate")
         {
-            Debug.Log("Colliding with obstacle or crate");
+//            Debug.Log("Colliding with obstacle or crate");
             walkDirection = -walkDirection;
             spriteRenderer.flipX = !spriteRenderer.flipX;
             canShoot = true;
