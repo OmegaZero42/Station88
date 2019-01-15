@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+[RequireComponent(typeof(Inventory))]
 public class PlayerPlatformerController : PhysicsObject {
 
     public float jumpTakeOffSpeed = 7;
@@ -38,6 +39,15 @@ public class PlayerPlatformerController : PhysicsObject {
     public bool IsTakingDamage;
     public float takingDamageTime;
 
+    Inventory inventory;
+
+    //statistics
+    int attackM = 1;
+    int attackD = 1;
+    int defense = 1;
+    int speed = 1;
+
+
     private void Start()
     {
         spriteRenderer = GetComponent<SpriteRenderer>();
@@ -55,6 +65,7 @@ public class PlayerPlatformerController : PhysicsObject {
         takingDamageTime = 5f;
         Outline ot = GetComponent<Outline>();
         ot.ShowHide_Outline(true);
+        inventory = GetComponent<Inventory>();
     }
 
     public override void FixedUpdate()

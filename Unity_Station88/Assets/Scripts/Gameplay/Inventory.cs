@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Inventory : MonoBehaviour {
 
@@ -11,36 +12,52 @@ public class Inventory : MonoBehaviour {
     InventoryObjects foot;
     InventoryObjects weapon;
 
-	void Start () {
-		
-	}
+    [SerializeField]
+    Image headImage;
+    [SerializeField]
+    Image armsImage;
+    [SerializeField]
+    Image accessoryImage;
+    [SerializeField]
+    Image footImage;
+    [SerializeField]
+    Image weaponImage;
+
+    void Start () {
+
+    }
 	
 	void Update () {
 		
 	}
 
-    void equipItem(InventoryObjects itemToEquip)
+    string equipItem(InventoryObjects itemToEquip)
     {
         switch (itemToEquip.getType())
         {
             case "head":
-                head = itemToEquip;               
-                break;
+                head = itemToEquip;
+                headImage.sprite = itemToEquip.getSprite().sprite;
+                return ("head");
             case "arms":
                 arms = itemToEquip;
-                break;
+                armsImage.sprite = itemToEquip.getSprite().sprite;
+                return ("arms");
             case "accessory":
                 accessory = itemToEquip;
-                break;
+                accessoryImage.sprite = itemToEquip.getSprite().sprite;
+                return ("accessory");
             case "foot":
                 foot = itemToEquip;
-                break;
+                footImage.sprite = itemToEquip.getSprite().sprite;
+                return ("foot");
             case "weapon":
                 weapon = itemToEquip;
-                break;
+                weaponImage.sprite = itemToEquip.getSprite().sprite;
+                return ("weapon");
             default:
                 addItemToInv(itemToEquip);
-                break;
+                return ("error");
         }
     }
 
@@ -55,4 +72,14 @@ public class Inventory : MonoBehaviour {
         objectStock[i + 1] = itemToAdd;
     }
 
+    private void OnTriggerEnter2D(Collider2D collider)
+    {
+        if (collider.tag == "InvObject")
+        {
+            InventoryObjects toEquip = collider.GetComponent<InventoryObjects>();
+            equipItem(toEquip);
+            GameObject toDestroy = collider.GetComponent<GameObject>();
+            Destroy(toDestroy);
+        }
+    }
 }

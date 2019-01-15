@@ -10,6 +10,7 @@ public class InventoryObjects : MonoBehaviour {
     int attackBonus;
     [SerializeField]
     int defenseBonus;
+    SpriteRenderer sprite;
 
     public int AttackBonus
     {
@@ -42,8 +43,13 @@ public class InventoryObjects : MonoBehaviour {
         {
             Debug.LogError("Item creation failed");
         }
+        sprite = GetComponent<SpriteRenderer>();
 	}
 
+    public SpriteRenderer getSprite()
+    {
+        return (sprite);
+    }
 
     public string getType()
     {
