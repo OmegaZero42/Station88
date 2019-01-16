@@ -7,27 +7,64 @@ public class HealthAndDamageSystem : MonoBehaviour
 {
 
     [SerializeField]
-    float maxHp;
-    float defense;
-    float currentHp;
+    int maxHp;
+    int defense;
+    [SerializeField]
+    int currentHp;
+    public int MaxHp
+    {
+        get
+        {
+            return maxHp;
+        }
+
+        set
+        {
+            maxHp = value;
+        }
+    }
+    public int CurrentHp
+    {
+        get
+        {
+            return currentHp;
+        }
+
+        set
+        {
+            currentHp = value;
+        }
+    }
+    public int Defense
+    {
+        get
+        {
+            return defense;
+        }
+
+        set
+        {
+            defense = value;
+        }
+    }
 
     void Start()
     {
-        if (maxHp <= 0)
+        if (MaxHp <= 0)
         {
-            maxHp = 100;
+            MaxHp = 100;
         }
-        defense = 0;
-        currentHp = maxHp;
+        Defense = 0;
+        CurrentHp = MaxHp;
     }
 
     void Update()
     {
-        if (currentHp <= 0)
+        if (CurrentHp <= 0)
         {
             if (this.tag == "Player")
             {
-                currentHp = maxHp;
+                CurrentHp = MaxHp;
                 SceneManager.LoadScene(1);
             }
             else
@@ -48,8 +85,10 @@ public class HealthAndDamageSystem : MonoBehaviour
             if (this.tag == "Player")
             {
                 PlayerPlatformerController pC = this.GetComponent<PlayerPlatformerController>();
-                if (!pC.IsTakingDamage)
-                    currentHp = currentHp - proj.damage;
+                if (!pC.IsTakingDamage && defense - proj.damage < 0)
+                {
+                    CurrentHp = CurrentHp - (defense - proj.damage);
+                }
                 pC.IsTakingDamage = true;
             }
         }

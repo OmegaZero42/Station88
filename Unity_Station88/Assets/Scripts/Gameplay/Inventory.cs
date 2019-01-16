@@ -5,12 +5,14 @@ using UnityEngine.UI;
 
 public class Inventory : MonoBehaviour {
 
+    PlayerPlatformerController player;
+
     InventoryObjects[] objectStock;
-    InventoryObjects head;
-    InventoryObjects arms;
-    InventoryObjects accessory;
-    InventoryObjects foot;
-    InventoryObjects weapon;
+    InventoryObjects head = new InventoryObjects();
+    InventoryObjects arms = new InventoryObjects();
+    InventoryObjects accessory = new InventoryObjects();
+    InventoryObjects foot = new InventoryObjects();
+    InventoryObjects weapon = new InventoryObjects();
 
     [SerializeField]
     Image headImage;
@@ -23,11 +25,76 @@ public class Inventory : MonoBehaviour {
     [SerializeField]
     Image weaponImage;
 
-    void Start () {
+    public InventoryObjects Head
+    {
+        get
+        {
+            return head;
+        }
 
+        set
+        {
+            head = value;
+        }
     }
-	
-	void Update () {
+    public InventoryObjects Arms
+    {
+        get
+        {
+            return arms;
+        }
+
+        set
+        {
+            arms = value;
+        }
+    }
+    public InventoryObjects Accessory
+    {
+        get
+        {
+            return accessory;
+        }
+
+        set
+        {
+            accessory = value;
+        }
+    }
+    public InventoryObjects Foot
+    {
+        get
+        {
+            return foot;
+        }
+
+        set
+        {
+            foot = value;
+        }
+    }
+    public InventoryObjects Weapon
+    {
+        get
+        {
+            return weapon;
+        }
+
+        set
+        {
+            weapon = value;
+        }
+    }
+
+    [SerializeField]
+    Sprite basicSprite;
+
+    void Start () {
+        player = GetComponent<PlayerPlatformerController>();
+        Debug.Log(player.name);
+    }
+
+    void Update () {
 		
 	}
 
@@ -36,30 +103,53 @@ public class Inventory : MonoBehaviour {
         switch (itemToEquip.getType())
         {
             case "head":
-                head = itemToEquip;
-                headImage.sprite = itemToEquip.getSprite().sprite;
+                Head = itemToEquip;
+                headImage.sprite = itemToEquip.Sprite.sprite;
+                upgradeDef();
                 return ("head");
             case "arms":
-                arms = itemToEquip;
-                armsImage.sprite = itemToEquip.getSprite().sprite;
+                Arms = itemToEquip;
+                armsImage.sprite = itemToEquip.Sprite.sprite;
+                upgradeAttM();
+                upgradeDef();
                 return ("arms");
             case "accessory":
-                accessory = itemToEquip;
-                accessoryImage.sprite = itemToEquip.getSprite().sprite;
+                Accessory = itemToEquip;
+                accessoryImage.sprite = itemToEquip.Sprite.sprite;
+                upgradeDef();
                 return ("accessory");
             case "foot":
-                foot = itemToEquip;
-                footImage.sprite = itemToEquip.getSprite().sprite;
+                Foot = itemToEquip;
+                footImage.sprite = itemToEquip.Sprite.sprite;
+                upgradeDef();
                 return ("foot");
             case "weapon":
-                weapon = itemToEquip;
-                weaponImage.sprite = itemToEquip.getSprite().sprite;
+                Weapon = itemToEquip;
+                weaponImage.sprite = itemToEquip.Sprite.sprite;
+                upgradeAttD();
                 return ("weapon");
             default:
                 addItemToInv(itemToEquip);
                 return ("error");
         }
     }
+
+    void upgradeDef()
+    {
+        player.Defense = Head.DefenseBonus + Arms.DefenseBonus
+            + Foot.DefenseBonus + Accessory.DefenseBonus;
+    }
+
+    void upgradeAttM()
+    {
+        player.AttackM = Arms.AttackBonus;
+    }
+
+    void upgradeAttD()
+    {
+        player.AttackD = Weapon.AttackBonus;
+    }
+
 
     void addItemToInv(InventoryObjects itemToAdd)
     {
@@ -78,8 +168,7 @@ public class Inventory : MonoBehaviour {
         {
             InventoryObjects toEquip = collider.GetComponent<InventoryObjects>();
             equipItem(toEquip);
-            GameObject toDestroy = collider.GetComponent<GameObject>();
-            Destroy(toDestroy);
+            Destroy(collider.gameObject);
         }
     }
 }

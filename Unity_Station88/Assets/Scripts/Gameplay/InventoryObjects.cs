@@ -38,21 +38,34 @@ public class InventoryObjects : MonoBehaviour {
         }
     }
 
+    public SpriteRenderer Sprite
+    {
+        get
+        {
+            return sprite;
+        }
+
+        set
+        {
+            sprite = value;
+        }
+    }
+
     void Start () {
         if (!"head arms accessory foot weapon".Contains(itemType))
         {
             Debug.LogError("Item creation failed");
         }
-        sprite = GetComponent<SpriteRenderer>();
+        Sprite = GetComponent<SpriteRenderer>();
 	}
-
-    public SpriteRenderer getSprite()
-    {
-        return (sprite);
-    }
 
     public string getType()
     {
         return(itemType);
+    }
+
+    public bool exists()
+    {
+        return (true);
     }
 }

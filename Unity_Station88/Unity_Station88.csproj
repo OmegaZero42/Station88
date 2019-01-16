@@ -306,18 +306,19 @@
     <Compile Include="Assets\Scripts\Gameplay\Inventory.cs" />
     <Compile Include="Assets\Scripts\Gameplay\InventoryObjects.cs" />
     <Compile Include="Assets\Scripts\Gameplay\MeleeAttack.cs" />
-    <Compile Include="Assets\Scripts\Gameplay\NewPhysics\PhysicsObject.cs" />
-    <Compile Include="Assets\Scripts\Gameplay\NewPhysics\PlayerPlatformerController.cs" />
     <Compile Include="Assets\Scripts\Gameplay\OutlineStart.cs" />
     <Compile Include="Assets\Scripts\Gameplay\PerfectPixel.cs" />
+    <Compile Include="Assets\Scripts\Gameplay\PhysicsObject.cs" />
     <Compile Include="Assets\Scripts\Gameplay\PlatformController.cs" />
     <Compile Include="Assets\Scripts\Gameplay\Player.cs" />
+    <Compile Include="Assets\Scripts\Gameplay\PlayerPlatformerController.cs" />
     <Compile Include="Assets\Scripts\Gameplay\ProjectileMovement.cs" />
     <Compile Include="Assets\Scripts\Gameplay\RaycastController.cs" />
     <Compile Include="Assets\Scripts\Gameplay\TpToSpawnPoint.cs" />
     <Compile Include="Assets\Scripts\Gameplay\Walker_Enemy.cs" />
     <Compile Include="Assets\Scripts\Menus&amp;Ui\LoadOnClick.cs" />
     <Compile Include="Assets\Scripts\Menus&amp;Ui\OnEnterQuit.cs" />
+    <Compile Include="Assets\Scripts\Menus&amp;Ui\PlayerStatsDisplay.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\2DOutline\Resources\Mats\OutlineBufferShader.shader" />
