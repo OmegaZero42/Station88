@@ -17,8 +17,6 @@ public class MeleeAttack : MonoBehaviour {
 
     void Start()
     {
-        if (damage < 10)
-            damage = 10;
     }
 
     void Update()
@@ -26,17 +24,17 @@ public class MeleeAttack : MonoBehaviour {
         timeToDisappear -= Time.deltaTime;
         if (timeToDisappear <= 0)
         {
-            AttackToDestroy.SetActive(false);
+            Destroy(AttackToDestroy);
         }
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        AttackToDestroy.SetActive(false);
+        Destroy(AttackToDestroy);
     }
 
     private void OnCollisionStay2D(Collision2D collision)
     {
-        AttackToDestroy.SetActive(false);
+        Destroy(AttackToDestroy);
     }
 }

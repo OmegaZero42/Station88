@@ -91,7 +91,6 @@ public class Inventory : MonoBehaviour {
 
     void Start () {
         player = GetComponent<PlayerPlatformerController>();
-        Debug.Log(player.name);
     }
 
     void Update () {

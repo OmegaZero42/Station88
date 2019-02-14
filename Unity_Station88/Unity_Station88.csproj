@@ -298,10 +298,19 @@
     <Compile Include="Assets\Add-Ons\Cinemachine\Timeline\CinemachineMixer.cs" />
     <Compile Include="Assets\Add-Ons\Cinemachine\Timeline\CinemachineShot.cs" />
     <Compile Include="Assets\Add-Ons\Cinemachine\Timeline\CinemachineTrack.cs" />
+    <Compile Include="Assets\Scripts\Gameplay\Checkpoint.cs" />
     <Compile Include="Assets\Scripts\Gameplay\Controller2D.cs" />
     <Compile Include="Assets\Scripts\Gameplay\DeadzoneCamera.cs" />
     <Compile Include="Assets\Scripts\Gameplay\DestroyableItem.cs" />
     <Compile Include="Assets\Scripts\Gameplay\DestroyProj.cs" />
+    <Compile Include="Assets\Scripts\Gameplay\DialogueScripts\Dialogue.cs" />
+    <Compile Include="Assets\Scripts\Gameplay\DialogueScripts\DialoguePng.cs" />
+    <Compile Include="Assets\Scripts\Gameplay\DialogueScripts\DialogueSystem.cs" />
+    <Compile Include="Assets\Scripts\Gameplay\DialogueScripts\DialogueTrigger.cs" />
+    <Compile Include="Assets\Scripts\Gameplay\Ennemies\EnnemyBasics.cs" />
+    <Compile Include="Assets\Scripts\Gameplay\Ennemies\EnnemySideColliders.cs" />
+    <Compile Include="Assets\Scripts\Gameplay\Ennemies\EnnemyWalker.cs" />
+    <Compile Include="Assets\Scripts\Gameplay\Ennemies\Walker_Enemy.cs" />
     <Compile Include="Assets\Scripts\Gameplay\HealthAndDamageSystem.cs" />
     <Compile Include="Assets\Scripts\Gameplay\Inventory.cs" />
     <Compile Include="Assets\Scripts\Gameplay\InventoryObjects.cs" />
@@ -315,7 +324,6 @@
     <Compile Include="Assets\Scripts\Gameplay\ProjectileMovement.cs" />
     <Compile Include="Assets\Scripts\Gameplay\RaycastController.cs" />
     <Compile Include="Assets\Scripts\Gameplay\TpToSpawnPoint.cs" />
-    <Compile Include="Assets\Scripts\Gameplay\Walker_Enemy.cs" />
     <Compile Include="Assets\Scripts\Menus&amp;Ui\LoadOnClick.cs" />
     <Compile Include="Assets\Scripts\Menus&amp;Ui\OnEnterQuit.cs" />
     <Compile Include="Assets\Scripts\Menus&amp;Ui\PlayerStatsDisplay.cs" />

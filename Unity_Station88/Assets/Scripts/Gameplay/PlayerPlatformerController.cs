@@ -12,11 +12,15 @@ public class PlayerPlatformerController : PhysicsObject {
     private SpriteRenderer spriteRenderer;
     private Transform trsf;
     bool flipOld = true;
+    [SerializeField]
+    Transform lastCheckpoint;
 
     [SerializeField]
     protected LayerMask layerMask;
     [SerializeField]
     protected GameObject defaultProjectile;
+    [SerializeField]
+    protected GameObject defaultMelee;
     [SerializeField]
     protected float projectileSpeed = 200;
     [SerializeField]
@@ -28,6 +32,8 @@ public class PlayerPlatformerController : PhysicsObject {
     protected GameObject HitboxMelee;
     [SerializeField]
     protected GameObject HitboxMelee2;
+    protected Transform hitboxMeleeOld;
+    protected Transform hitboxMeleeOld2;
 
 
     private GameObject[] getCount;
@@ -39,7 +45,7 @@ public class PlayerPlatformerController : PhysicsObject {
     public bool IsTakingDamage;
     public float takingDamageTime;
 
-    //statistics
+    //statistiques
     int attackM;
     int attackD;
     int defense;
@@ -92,6 +98,21 @@ public class PlayerPlatformerController : PhysicsObject {
             speed = value;
         }
     }
+    bool isTalking;
+    public bool IsTalking
+    {
+        get
+        {
+            return isTalking;
+        }
+
+        set
+        {
+            isTalking = value;
+        }
+    }
+
+    HealthAndDamageSystem pvSystem;
 
     private void Start()
     {
@@ -110,8 +131,8 @@ public class PlayerPlatformerController : PhysicsObject {
         takingDamageTime = 5f;
         Outline ot = GetComponent<Outline>();
         ot.ShowHide_Outline(true);
+        pvSystem = GetComponent<HealthAndDamageSystem>();
     }
-
 
     public override void FixedUpdate()
     {
@@ -125,14 +146,21 @@ public class PlayerPlatformerController : PhysicsObject {
         }
     }
 
+
     protected override void ComputeVelocity()
     {
+
+        if (isTalking)
+        {
+            return;
+        }
+
         Vector2 move = Vector2.zero;
 
         move.x = Input.GetAxis("Horizontal");
 
         if (!IsTakingDamage)
-        {
+        {            
             if (Input.GetButtonDown("Jump") && grounded)
             {
                 velocity.y = jumpTakeOffSpeed;
@@ -183,13 +211,18 @@ public class PlayerPlatformerController : PhysicsObject {
 
             if (Input.GetButtonDown("Fire2"))
             {
+                GameObject instMelee;
                 if (spriteRenderer.flipX == false)
                 {
-                    HitboxMelee.SetActive(true);
+                    instMelee = Instantiate(defaultMelee, new Vector3(projSpawn.position.x+1, projSpawn.position.y,0), new Quaternion());
+                    MeleeAttack attackToHandle = instMelee.GetComponent<MeleeAttack>();
+                    attackToHandle.damage = attackM;
                 }
                 else if (spriteRenderer.flipX == true)
                 {
-                    HitboxMelee2.SetActive(true);
+                    instMelee = Instantiate(defaultMelee, new Vector3(projSpawnBis.position.x -1, projSpawn.position.y, 0), new Quaternion());
+                    MeleeAttack attackToHandle = instMelee.GetComponent<MeleeAttack>();
+                    attackToHandle.damage = attackM;
                 }
             }
         }
@@ -222,5 +255,15 @@ public class PlayerPlatformerController : PhysicsObject {
         {
             Physics2D.IgnoreCollision(collision.collider.GetComponent<Collider2D>(), GetComponent<Collider2D>());
         }
+    }
+
+    public void SetCheckpoint(Transform toSet)
+    {
+        lastCheckpoint = toSet;
+    }
+
+    public Transform GetCheckpoint()
+    {
+        return(lastCheckpoint);
     }
 }

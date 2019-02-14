@@ -60,12 +60,17 @@ public class HealthAndDamageSystem : MonoBehaviour
 
     void Update()
     {
+        if (Input.GetButtonDown("Suicide"))
+        {
+            currentHp = currentHp - 10;
+        }
         if (CurrentHp <= 0)
         {
             if (this.tag == "Player")
             {
                 CurrentHp = MaxHp;
-                SceneManager.LoadScene(1);
+                PlayerPlatformerController player = GetComponent<PlayerPlatformerController>();
+                player.transform.position = player.GetCheckpoint().position;
             }
             else
             {
